@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+// SEE HOW CLEAN THIS CODE BECOMES ON IMPORTING EVERYTHING INSIDE INDEX.JS
+import {Footer,Blog,Poss,WhatGPT3,Header,Feat} from './containers';
+import {Article,Brand,Cta,Navbar} from './components';
+import './App.css'
+// npm start to START THE APPLICATION
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    
+      <div className='App'>
+<div className='gradient__bg'>
+<Navbar/>
+<Header/>
 
+</div>
+<Brand/>
+<WhatGPT3/>
+<Feat/>
+<Poss/>
+<Cta/>
+<Blog/>
+<Footer/>
+
+
+
+
+
+      </div>
+    
+  )
+}
 export default App;
